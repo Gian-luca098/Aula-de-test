@@ -3,17 +3,11 @@ package org.example.aulatest;
 public class Exercicio {
 
 
-    public static double Test(Double valor, Double desconto,Double valorFinal){
-
-        if (valor>500){
-            desconto = valor*0.1;
-            valorFinal = valor-desconto;
-        }
-
+    public static double Test(Double valor){
 
 
         if (valor>500){
-            return valorFinal;
+            return valor * 0.90;
 
         }else {
             return valor;

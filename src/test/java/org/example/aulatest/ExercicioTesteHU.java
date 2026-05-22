@@ -11,13 +11,12 @@ public class ExercicioTesteHU {
     @Test
     @DisplayName("100>500=100")
     void Test(){
+        Exercicio ex = new Exercicio();
         System.out.println("Exercicio valor>500 = desconto ");
-        double valor = 100;
-
-        double expected = 100;
-
-        Double actual = Exercicio.Test(valor,valorFinal);
-        assertEquals(expected,actual,()->"Valor incorreto!"+expected+"!");
+        double valor = 1000;
+        double expected = 900;
+        Double actual = ex.Test(valor);
+        assertEquals(expected,actual,()->valor+"Valor incorreto!"+expected+"!");
 
     }
 
